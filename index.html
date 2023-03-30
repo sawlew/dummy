@@ -8,6 +8,7 @@
     <title>Facebook</title>
     <link rel="icon" href="img/fb.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <script src="index.js"></script>
 </head>
 
@@ -15,10 +16,10 @@
     <header>
         <div id="headie">
             <div id="start">
-                <div onclick="window.location.href='index.html';"><img src="img/fb.png" alt="" width="50" height="50"></div>
-                <div id="search">
+                <div onclick="window.location.href='index.html';"><img src="img/fb.png" alt="" width="50" height="50" style="cursor: pointer;"></div>
+                <div class="search">
                     <label for="search"><svg fill="#65676B" viewBox="0 0 16 16" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xlup9mm x1kky2od"><g fill-rule="evenodd" transform="translate(-448 -544)"><g fill-rule="nonzero"><path d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z" transform="translate(448 544)"></path><path d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z" transform="translate(448 544)"></path><path d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z" transform="translate(448 544)"></path><path d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z" transform="translate(448 544)"></path></g></g></svg></label>
-                    <input type="search" name="search" placeholder="Search Facebook" id="bar">
+                    <input type="search" name="search" placeholder="Search Facebook" class="bar">
                 </div>
             </div>
 
@@ -30,16 +31,16 @@
             </div>
 
             <div id="last">
-                <div id="last-header"><svg viewBox="0 0 44 44" width="20" height="20"><circle cx="7" cy="7" r="6"></circle><circle cx="22" cy="7" r="6"></circle><circle cx="37" cy="7" r="6"></circle><circle cx="7" cy="22" r="6"></circle><circle cx="22" cy="22" r="6"></circle><circle cx="37" cy="22" r="6"></circle><circle cx="7" cy="37" r="6"></circle><circle cx="22" cy="37" r="6"></circle><circle cx="37" cy="37" r="6"></circle></svg></div>
-                <div id="last-header"><div id="messenger-notification"><span>4</span></div><svg viewBox="0 0 28 28" alt="" class="" fill="currentColor" height="20" width="20"><path d="M14 2.042c6.76 0 12 4.952 12 11.64S20.76 25.322 14 25.322a13.091 13.091 0 0 1-3.474-.461.956 .956 0 0 0-.641.047L7.5 25.959a.961.961 0 0 1-1.348-.849l-.065-2.134a.957.957 0 0 0-.322-.684A11.389 11.389 0 0 1 2 13.682C2 6.994 7.24 2.042 14 2.042ZM6.794 17.086a.57.57 0 0 0 .827.758l3.786-2.874a.722.722 0 0 1 .868 0l2.8 2.1a1.8 1.8 0 0 0 2.6-.481l3.525-5.592a.57.57 0 0 0-.827-.758l-3.786 2.874a.722.722 0 0 1-.868 0l-2.8-2.1a1.8 1.8 0 0 0-2.6.481Z"></path></svg></div>
+                <div id="last-header" onclick="mainMenu()"><svg viewBox="0 0 44 44" id="menu-svg" fill="black" width="20" height="20"><circle cx="7" cy="7" r="6"></circle><circle cx="22" cy="7" r="6"></circle><circle cx="37" cy="7" r="6"></circle><circle cx="7" cy="22" r="6"></circle><circle cx="22" cy="22" r="6"></circle><circle cx="37" cy="22" r="6"></circle><circle cx="7" cy="37" r="6"></circle><circle cx="22" cy="37" r="6"></circle><circle cx="37" cy="37" r="6"></circle></svg></div>
+                <div id="last-header1" onclick="messenger()"><div id="messenger-notification"><span>4</span></div><svg viewBox="0 0 28 28" alt="" id="mess-svg" fill="black" height="20" width="20"><path d="M14 2.042c6.76 0 12 4.952 12 11.64S20.76 25.322 14 25.322a13.091 13.091 0 0 1-3.474-.461.956 .956 0 0 0-.641.047L7.5 25.959a.961.961 0 0 1-1.348-.849l-.065-2.134a.957.957 0 0 0-.322-.684A11.389 11.389 0 0 1 2 13.682C2 6.994 7.24 2.042 14 2.042ZM6.794 17.086a.57.57 0 0 0 .827.758l3.786-2.874a.722.722 0 0 1 .868 0l2.8 2.1a1.8 1.8 0 0 0 2.6-.481l3.525-5.592a.57.57 0 0 0-.827-.758l-3.786 2.874a.722.722 0 0 1-.868 0l-2.8-2.1a1.8 1.8 0 0 0-2.6.481Z"></path></svg></div>
                 <div id="last-header"><div id="messenger-notification"><span>28</span></div><svg viewBox="0 0 28 28" alt="" class="" fill="currentColor" height="20" width="20"><path d="M7.847 23.488C9.207 23.488 11.443 23.363 14.467 22.806 13.944 24.228 12.581 25.247 10.98 25.247 9.649 25.247 8.483 24.542 7.825 23.488L7.847 23.488ZM24.923 15.73C25.17 17.002 24.278 18.127 22.27 19.076 21.17 19.595 18.724 20.583 14.684 21.369 11.568 21.974 9.285 22.113 7.848 22.113 7.421 22.113 7.068 22.101 6.79 22.085 4.574 21.958 3.324 21.248 3.077 19.976 2.702 18.049 3.295 17.305 4.278 16.073L4.537 15.748C5.2 14.907 5.459 14.081 5.035 11.902 4.086 7.022 6.284 3.687 11.064 2.753 15.846 1.83 19.134 4.096 20.083 8.977 20.506 11.156 21.056 11.824 21.986 12.355L21.986 12.356 22.348 12.561C23.72 13.335 24.548 13.802 24.923 15.73Z"></path></svg></div>
-                <div id="last-header"><div id="notification"></div><img src="img/avatar.jpg" alt="" width="40" height="40" id="icon-profile" style="object-fit: cover;"></div>
+                <div id="last-header" onclick="profileMenu()"><div id="notification"></div><img src="img/avatar.jpg" alt="" width="40" height="40" id="icon-profile" style="object-fit: cover;"></div>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="section section1 scrollbar1">
+        <div class="section section1 scrollbar1" tabindex="0">
             <div id="features">
                 <div id="first">
                     <li>
@@ -127,7 +128,7 @@
                     </li>
                 </div>
             </div>
-            <div id="section1-footer">
+            <div class="section1-footer">
                 <ul>
                     <li><a>Privacy</a><span> · </span></li>
                     <li><a>Terms</a><span> · </span></li>
@@ -147,77 +148,86 @@
         <div class="section section2 scrollbar2">
             <div id="container1">
                 <div class="top">
-                    <div class="cover">
+                    <div id="cover" onclick="story()">
                         <div class="story">
-                            <svg fill="#1B74E4" viewBox="0 0 20 20" width="1.3em" height="1.3em" class=""><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M457 368.832a.5.5 0 0 0 .883.323l1.12-1.332a.876.876 0 0 1 .679-.323h3.522a2.793 2.793 0 0 0 2.796-2.784v-10.931a2.793 2.793 0 0 0-2.796-2.785h-3.454a2.75 2.75 0 0 0-2.75 2.75v15.082zm-1.5 0a.5.5 0 0 1-.883.323l-1.12-1.332a.876.876 0 0 0-.679-.323h-3.522a2.793 2.793 0 0 1-2.796-2.784v-10.931a2.793 2.793 0 0 1 2.796-2.785h3.454a2.75 2.75 0 0 1 2.75 2.75v15.082z"></path></g></svg>
-                            <span>Stories</span>
+                            <svg fill="#1B74E4" viewBox="0 0 20 20" width="1.3em" height="1.3em" id="story-icon"><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M457 368.832a.5.5 0 0 0 .883.323l1.12-1.332a.876.876 0 0 1 .679-.323h3.522a2.793 2.793 0 0 0 2.796-2.784v-10.931a2.793 2.793 0 0 0-2.796-2.785h-3.454a2.75 2.75 0 0 0-2.75 2.75v15.082zm-1.5 0a.5.5 0 0 1-.883.323l-1.12-1.332a.876.876 0 0 0-.679-.323h-3.522a2.793 2.793 0 0 1-2.796-2.784v-10.931a2.793 2.793 0 0 1 2.796-2.785h3.454a2.75 2.75 0 0 1 2.75 2.75v15.082z"></path></g></svg>
+                            <span id="story_span">Stories</span>
                         </div>
                     </div>
-                    <div class="cover-reel">
+                    <div id="cover-reel" onclick="reel()">
                         <div class="reel">
-                            <svg fill="#606266" viewBox="0 0 20 20" width="1.3em" height="1.3em" class=""><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M454.59 355h4.18l-2.4-4h-3.28c-.22 0-.423.008-.624.017L454.59 355zm6.514 0h3.695c-.226-1.031-.65-1.79-1.326-2.489-1.061-1.025-2.248-1.488-4.392-1.511h-.379l2.401 4zm-8.78 0-1.942-3.64c-.73.247-1.315.63-1.868 1.165-.668.69-1.09 1.445-1.315 2.475h5.125zm7.043 7.989a.711.711 0 0 1-.22.202l-4.573 2.671-.05.027a.713.713 0 0 1-1.024-.643v-5.343l.002-.056a.714.714 0 0 1 1.072-.56l4.572 2.67.054.036a.714.714 0 0 1 .167.996zm-12.366-5.99V363.083l.001.03v.112l.005.048h.001c.05 2.02.513 3.176 1.506 4.203 1.102 1.066 2.324 1.525 4.577 1.525h5.99c2.144-.023 3.331-.486 4.392-1.511 1.005-1.04 1.467-2.198 1.517-4.217h.003c.003-.1.005-.1.006-.204l.001-.156V357h-18z"></path></g></svg>
-                            <span>Reels</span>
+                            <svg fill="#606266" viewBox="0 0 20 20" width="1.3em" height="1.3em" id="reel-icon"><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M454.59 355h4.18l-2.4-4h-3.28c-.22 0-.423.008-.624.017L454.59 355zm6.514 0h3.695c-.226-1.031-.65-1.79-1.326-2.489-1.061-1.025-2.248-1.488-4.392-1.511h-.379l2.401 4zm-8.78 0-1.942-3.64c-.73.247-1.315.63-1.868 1.165-.668.69-1.09 1.445-1.315 2.475h5.125zm7.043 7.989a.711.711 0 0 1-.22.202l-4.573 2.671-.05.027a.713.713 0 0 1-1.024-.643v-5.343l.002-.056a.714.714 0 0 1 1.072-.56l4.572 2.67.054.036a.714.714 0 0 1 .167.996zm-12.366-5.99V363.083l.001.03v.112l.005.048h.001c.05 2.02.513 3.176 1.506 4.203 1.102 1.066 2.324 1.525 4.577 1.525h5.99c2.144-.023 3.331-.486 4.392-1.511 1.005-1.04 1.467-2.198 1.517-4.217h.003c.003-.1.005-.1.006-.204l.001-.156V357h-18z"></path></g></svg>
+                            <span id="reel_span">Reels</span>
                         </div>
                     </div>
                 </div>
 
                 <div id="cards">
-                    <div class="card1 card">
-                        <img src="img/avatar.jpg" alt="" id="profilePic">
-                        <div id="addStatus"><svg fill="white" viewBox="0 0 20 20" width="1em" height="1em" class=""><g fill-rule="evenodd" transform="translate(-446 -350)"><g fill-rule="nonzero"><path d="M95 201.5h13a1 1 0 1 0 0-2H95a1 1 0 1 0 0 2z" transform="translate(354.5 159.5)"></path><path d="M102.5 207v-13a1 1 0 1 0-2 0v13a1 1 0 1 0 2 0z" transform="translate(354.5 159.5)"></path></g></g></svg></div>
-                        <div id="profileName"><span>sawlew</span></div>
-                        <div class="overlay"></div>
+                    <div id="story-stuff">
+                        <div class="card1 card">
+                            <img src="img/avatar.jpg" alt="" id="profilePic">
+                            <div id="addStatus"><svg fill="white" viewBox="0 0 20 20" width="1em" height="1em" class=""><g fill-rule="evenodd" transform="translate(-446 -350)"><g fill-rule="nonzero"><path d="M95 201.5h13a1 1 0 1 0 0-2H95a1 1 0 1 0 0 2z" transform="translate(354.5 159.5)"></path><path d="M102.5 207v-13a1 1 0 1 0-2 0v13a1 1 0 1 0 2 0z" transform="translate(354.5 159.5)"></path></g></g></svg></div>
+                            <div id="profileName"><span>sawlew</span></div>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="card2 card othercards">
+                            <img src="img/kungfuPanda.jpg" width="112" height="200" alt="" id="titleStatus">
+                            <div class="profileIcon"></div>
+                            <span class="profName">Agbabiaka OmoThanos</span>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="card3 card othercards">
+                            <img src="img/pandaandfamily.jpg" alt="" id="titleStatus">
+                            <div class="profileIcon"></div>
+                            <span class="profName">profile name</span>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="card-last card othercards">
+                            <img src="img/pandaandfriends.jpeg" alt="" id="titleStatus">
+                            <div class="profileIcon"></div>
+                            <span class="profName">profile name</span>
+                            <div class="overlay"></div>
+                        </div>
                     </div>
-                    <div class="card2 card othercards">
-                        <img src="img/kungfuPanda.jpg" width="112" height="200" alt="" id="titleStatus">
-                        <div class="profileIcon"></div>
-                        <span class="profName">Agbabiaka OmoThanos</span>
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="card3 card othercards">
-                        <img src="img/pandaandfamily.jpg" alt="" id="titleStatus">
-                        <div class="profileIcon"></div>
-                        <span class="profName">profile name</span>
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="card4 card othercards">
-                        <img src="img/pandaandfriends.jpeg" alt="" id="titleStatus">
-                        <div class="profileIcon"></div>
-                        <span class="profName">profile name</span>
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="card5 card othercards">
-                        <img src="img/kiss.jpg" alt="" id="titleStatus">
-                        <div class="profileIcon"></div>
-                        <span class="profName">profile name</span>
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="card6 card othercards">
-                        <img src="img/kiss.jpg" alt="" id="titleStatus">
-                        <div class="profileIcon"></div>
-                        <span class="profName">profile name</span>
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="card7 card othercards">
-                        <img src="img/kiss.jpg" alt="" id="titleStatus">
-                        <div class="profileIcon"></div>
-                        <span class="profName">profile name</span>
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="card8 card othercards">
-                        <img src="img/kiss.jpg" alt="" id="titleStatus">
-                        <div class="profileIcon"></div>
-                        <span class="profName">profile name</span>
-                        <div class="overlay"></div>
+                    <div id="reel-stuff" style="display: none;">
+                        <div class="card1 card othercards">
+                            <img src="img/kiss.jpg" alt="" id="titleStatus">
+                            <div class="profName">
+                                <i data-visualcompletion="css-img" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/8K71K7SKDvZ.png?_nc_eui2=AeG1h7yNuDCAGmbYdYL0xX9d-eJy6DxDnYz54nLoPEOdjMg2IpUMehPW_DvBdcDaVfkEO9iZW-2IrEe6zht_19Tb&quot;); background-position: -17px -560px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i>
+                                <span>1.8M</span>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="card6 card othercards">
+                            <img src="img/kiss.jpg" alt="" id="titleStatus">
+                            <div class="profName">
+                                <i data-visualcompletion="css-img" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/8K71K7SKDvZ.png?_nc_eui2=AeG1h7yNuDCAGmbYdYL0xX9d-eJy6DxDnYz54nLoPEOdjMg2IpUMehPW_DvBdcDaVfkEO9iZW-2IrEe6zht_19Tb&quot;); background-position: -17px -560px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i>
+                                <span>1.8M</span>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="card7 card othercards">
+                            <img src="img/kiss.jpg" alt="" id="titleStatus">
+                            <div class="profName">
+                                <i data-visualcompletion="css-img" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/8K71K7SKDvZ.png?_nc_eui2=AeG1h7yNuDCAGmbYdYL0xX9d-eJy6DxDnYz54nLoPEOdjMg2IpUMehPW_DvBdcDaVfkEO9iZW-2IrEe6zht_19Tb&quot;); background-position: -17px -560px; background-size: auto; width: 12px; height: 12px; background-repeat: no-repeat; display: inline-block;"></i>
+                                <span>1.8M</span>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="card-last1 card othercards">
+                            <div class="arrow"><i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/PV1HcD6M48y.png?_nc_eui2=AeGzTT5WXUTh8gQ3chtsjINxU--TlGYrt6FT75OUZiu3oe64NDFIT202yyWMRUamhKLdMwqhSn-UPtSzYc47rjAw&quot;); background-position: 0px -25px; background-size: auto; width: 24px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                            <span class="arrow-name">See more reel</span>
+                            <div class="overlay"></div>
+                        </div>
                     </div>
                 </div>
-                <button id="slideLeft" onclick="slideleft()" type="button"><svg fill="#606266" viewBox="0 0 20 20" width="1.8em" height="1.8em" class=""><path d="M12.2 4.53 6.727 10l5.47 5.47a.75.75 0 0 1-1.061 1.06l-6-6a.751.751 0 0 1 0-1.06l6-6A.75.75 0 1 1 12.2 4.53z"></path></svg></button>
-                <button id="slideRight" onclick="slideright()" type="button"><svg fill="#606266" viewBox="0 0 20 20" width="1.8em" height="1.8em" class=""><path d="M7.8 4.53 13.273 10 7.8 15.47a.75.75 0 0 0 1.061 1.06l6-6a.751.751 0 0 0 0-1.06l-6-6A.75.75 0 0 0 7.8 4.53z"></path></svg></button>
+                <button id="slideLeft" onclick="slideleft()" type="button"><svg fill="white" viewBox="0 0 20 20" width="1.8em" height="1.8em" class=""><path d="M12.2 4.53 6.727 10l5.47 5.47a.75.75 0 0 1-1.061 1.06l-6-6a.751.751 0 0 1 0-1.06l6-6A.75.75 0 1 1 12.2 4.53z"></path></svg></button>
+                <button id="slideRight" onclick="slideright()" type="button"><svg fill="white" viewBox="0 0 20 20" width="1.8em" height="1.8em" class=""><path d="M7.8 4.53 13.273 10 7.8 15.47a.75.75 0 0 0 1.061 1.06l6-6a.751.751 0 0 0 0-1.06l-6-6A.75.75 0 0 0 7.8 4.53z"></path></svg></button>
             </div>
             <div id="container2">
                 <div id="status">
                     <img src="img/avatar.jpg" alt="" id="mindPic" style="object-fit: cover;">
-                    <div id="mind" onclick="warning()"><span>What's on your mind, Soliu?</span></div>
+                    <div id="mind" onclick="warning()"><span>What's on your mind, Thanos?</span></div>
                 </div>
                 <hr>
                 <div id="options">
@@ -308,6 +318,135 @@
                 </div>
 
             </div>
+
+
+            <div id="people">
+                <div class="top-people">
+                    <p>People You May Know</p>
+                    <div id="three-dots"><svg fill="#606266" viewBox="0 0 20 20" width="1em" height="1em" class=""><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path></g></svg></div>
+                </div>
+
+                <div id="cards-people">
+                    <div class="avatar avatar1">
+                        <div class="poster">
+                            <img src="img/kungfuPanda.jpg" alt="" style="object-fit: cover;">
+                        </div>
+                        <div class="add-friend">
+                            <p>Agbabiaka OmoThanos</p>
+                            <div class="add-button">
+                                <img src="img/add-friend.png" alt="">
+                                <!-- <i data-visualcompletion="css-img" class="x1b0d499 xi3auck" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/Nghv97MVrwK.png?_nc_eui2=AeF8FNZn1RGHrvdAlc-dH6d_EZd1GCdJRgoRl3UYJ0lGCmwMDW17UuoIkUv_B4DYRlBxb90cNXFnj4p9CqlPe8lm&quot;); background-position: 0px -429px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i> -->
+                                <span>Add Friend</span>
+                            </div>
+                        </div>
+                        <div id="cancel-friend">
+                            <img src="img/cancelwhite.png" alt="">
+                        </div>
+                    </div>
+                    <div class="avatar">
+                        <div class="poster">
+                            <img src="img/kungfuPanda.jpg" width="" height="" alt="" style="object-fit: cover;">
+                        </div>
+                        <div class="add-friend">
+                            <p>Agbabiaka OmoThanos</p>
+                            <div class="add-button">
+                                <img src="img/add-friend.png" alt="">
+                                <!-- <i data-visualcompletion="css-img" class="x1b0d499 xi3auck" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/Nghv97MVrwK.png?_nc_eui2=AeF8FNZn1RGHrvdAlc-dH6d_EZd1GCdJRgoRl3UYJ0lGCmwMDW17UuoIkUv_B4DYRlBxb90cNXFnj4p9CqlPe8lm&quot;); background-position: 0px -429px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i> -->
+                                <span>Add Friend</span>
+                            </div>
+                        </div>
+                        <div id="cancel-friend">
+                            <img src="img/cancelwhite.png" alt="">
+                        </div>
+                    </div>
+                    <div class="avatar">
+                        <div class="poster">
+                            <img src="img/kungfuPanda.jpg" width="" height="" alt="" style="object-fit: cover;">
+                        </div>
+                        <div class="add-friend">
+                            <p>Agbabiaka OmoThanos</p>
+                            <div class="add-button">
+                                <img src="img/add-friend.png" alt="">
+                                <!-- <i data-visualcompletion="css-img" class="x1b0d499 xi3auck" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/Nghv97MVrwK.png?_nc_eui2=AeF8FNZn1RGHrvdAlc-dH6d_EZd1GCdJRgoRl3UYJ0lGCmwMDW17UuoIkUv_B4DYRlBxb90cNXFnj4p9CqlPe8lm&quot;); background-position: 0px -429px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i> -->
+                                <span>Add Friend</span>
+                            </div>
+                        </div>
+                        <div id="cancel-friend">
+                            <img src="img/cancelwhite.png" alt="">
+                        </div>
+                    </div>
+                    <div class="avatar">
+                        <div class="poster">
+                            <img src="img/kungfuPanda.jpg" width="" height="" alt="" style="object-fit: cover;">
+                        </div>
+                        <div class="add-friend">
+                            <p>Agbabiaka OmoThanos</p>
+                            <div class="add-button">
+                                <img src="img/add-friend.png" alt="">
+                                <!-- <i data-visualcompletion="css-img" class="x1b0d499 xi3auck" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/Nghv97MVrwK.png?_nc_eui2=AeF8FNZn1RGHrvdAlc-dH6d_EZd1GCdJRgoRl3UYJ0lGCmwMDW17UuoIkUv_B4DYRlBxb90cNXFnj4p9CqlPe8lm&quot;); background-position: 0px -429px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i> -->
+                                <span>Add Friend</span>
+                            </div>
+                        </div>
+                        <div id="cancel-friend">
+                            <img src="img/cancelwhite.png" alt="">
+                        </div>
+                    </div>
+                    <div class="avatar">
+                        <div class="poster">
+                            <img src="img/kungfuPanda.jpg" width="" height="" alt="" style="object-fit: cover;">
+                        </div>
+                        <div class="add-friend">
+                            <p>Agbabiaka OmoThanos</p>
+                            <div class="add-button">
+                                <img src="img/add-friend.png" alt="">
+                                <!-- <i data-visualcompletion="css-img" class="x1b0d499 xi3auck" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/Nghv97MVrwK.png?_nc_eui2=AeF8FNZn1RGHrvdAlc-dH6d_EZd1GCdJRgoRl3UYJ0lGCmwMDW17UuoIkUv_B4DYRlBxb90cNXFnj4p9CqlPe8lm&quot;); background-position: 0px -429px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i> -->
+                                <span>Add Friend</span>
+                            </div>
+                        </div>
+                        <div id="cancel-friend">
+                            <img src="img/cancelwhite.png" alt="">
+                        </div>
+                    </div>
+                    <div class="avatar">
+                        <div class="poster">
+                            <img src="img/kungfuPanda.jpg" width="" height="" alt="" style="object-fit: cover;">
+                        </div>
+                        <div class="add-friend">
+                            <p>Agbabiaka OmoThanos</p>
+                            <div class="add-button">
+                                <img src="img/add-friend.png" alt="">
+                                <!-- <i data-visualcompletion="css-img" class="x1b0d499 xi3auck" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/Nghv97MVrwK.png?_nc_eui2=AeF8FNZn1RGHrvdAlc-dH6d_EZd1GCdJRgoRl3UYJ0lGCmwMDW17UuoIkUv_B4DYRlBxb90cNXFnj4p9CqlPe8lm&quot;); background-position: 0px -429px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i> -->
+                                <span>Add Friend</span>
+                            </div>
+                        </div>
+                        <div id="cancel-friend">
+                            <img src="img/cancelwhite.png" alt="">
+                        </div>
+                    </div>
+                    <div class="avatar avatar2">
+                        <div class="poster">
+                            <img src="img/kungfuPanda.jpg" width="" height="" alt="" style="object-fit: cover;">
+                        </div>
+                        <div class="add-friend">
+                            <p>Agbabiaka OmoThanos</p>
+                            <div class="add-button">
+                                <img src="img/add-friend.png" alt="">
+                                <!-- <i data-visualcompletion="css-img" class="x1b0d499 xi3auck" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/Nghv97MVrwK.png?_nc_eui2=AeF8FNZn1RGHrvdAlc-dH6d_EZd1GCdJRgoRl3UYJ0lGCmwMDW17UuoIkUv_B4DYRlBxb90cNXFnj4p9CqlPe8lm&quot;); background-position: 0px -429px; background-size: auto; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i> -->
+                                <span>Add Friend</span>
+                            </div>
+                        </div>
+                        <div id="cancel-friend">
+                            <img src="img/cancelwhite.png" alt="">
+                        </div>
+                       
+                    </div>
+                    
+                    <button class="slideLeft" onclick="slideleft1()" type="button"><svg fill="white" viewBox="0 0 20 20" width="1.8em" height="1.8em" class=""><path d="M12.2 4.53 6.727 10l5.47 5.47a.75.75 0 0 1-1.061 1.06l-6-6a.751.751 0 0 1 0-1.06l6-6A.75.75 0 1 1 12.2 4.53z"></path></svg></button>
+                    <button class="slideRight" onclick="slideright1()" type="button"><svg fill="white" viewBox="0 0 20 20" width="1.8em" height="1.8em" class=""><path d="M7.8 4.53 13.273 10 7.8 15.47a.75.75 0 0 0 1.061 1.06l6-6a.751.751 0 0 0 0-1.06l-6-6A.75.75 0 0 0 7.8 4.53z"></path></svg></button>
+                </div>
+                <p class="see-all">See All</p>
+            </div>
+
 
             <div id="container3">
                 <div id="topDetails">
@@ -835,13 +974,28 @@
                 <span>Create new group</span>
             </div>
         </div>
+
+        <div id="message" style="display: none;">
+            <div class="message-top">
+                <div class="message-top1">
+                    <span>New message</span>
+                    <div id="cancel-offline1" onclick="chat()">
+                        <img src="img/cancel1.png" alt="" width="10px" height="10px">
+                    </div>
+                </div>
+                <div class="message-top2">
+                    <span>To:</span>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
     </main>
     <div id="offline" style="display: flex;">
-        <svg viewBox="0 0 24 24" alt="" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1eu2eya" fill="currentColor" height="24" width="24"><path d="M23.7805.2195c.2925.293.2925.768 0 1.061l-22.5 22.5C1.134 23.927.942 24 .75 24c-.192 0-.384-.073-.5305-.2195-.2925-.293-.2925-.768 0-1.061l12.1967947-12.1971509c-2.3773758-.1150468-4.79162015.7286756-6.6038447 2.5401009-.3905.3905-1.0235.3905-1.414 0-.3905-.3905-.3905-1.024 0-1.414 2.65728981-2.65728981 6.3696459-3.62280965 9.8005664-2.90852144l2.430738-2.43186193C11.7816792 4.58111626 6.15198938 5.65271062 2.27735 9.52735c-.3905.3905-1.0235.3905-1.414 0-.3905-.3905-.3905-1.0235 0-1.414 4.6714534-4.67191574 11.571522-5.78608437 17.3096457-3.34843552L22.7195.2195c.293-.2925.768-.2925 1.061 0zM12 18.5c.6905 0 1.25.5595 1.25 1.25S12.6905 21 12 21s-1.25-.5595-1.25-1.25.5595-1.25 1.25-1.25zm1.4175-4.81495c.9705.2455 1.8905.741 2.6485 1.499.3905.3905.3905 1.0235 0 1.414-.1955.1955-.451.293-.707.293-.256 0-.512-.0975-.707-.293-.7835333-.7835333-1.8301422-1.1445778-2.8581093-1.0880116L11.574 15.52855l1.8435-1.8435zm3.8154-3.8154c.848.4725 1.649 1.059 2.3685 1.779.391.39.391 1.023 0 1.414-.195.195-.451.293-.707.293-.2555 0-.5115-.098-.707-.293-.7285-.728-1.5575-1.291-2.439-1.7085zm2.1908-2.1908l1.4425-1.4425c.8.545 1.5615 1.168 2.2705 1.877.3905.3905.3905 1.0235 0 1.414-.1955.1955-.451.293-.707.293-.256 0-.5115-.0975-.707-.293-.5933333-.59333333-1.2283333-1.11861111-1.895162-1.57959491L19.4237 7.67885l1.4425-1.4425z"></path></svg>
+        <svg viewBox="0 0 24 24" alt="" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1eu2eya" fill="grey" height="24" width="24"><path d="M23.7805.2195c.2925.293.2925.768 0 1.061l-22.5 22.5C1.134 23.927.942 24 .75 24c-.192 0-.384-.073-.5305-.2195-.2925-.293-.2925-.768 0-1.061l12.1967947-12.1971509c-2.3773758-.1150468-4.79162015.7286756-6.6038447 2.5401009-.3905.3905-1.0235.3905-1.414 0-.3905-.3905-.3905-1.024 0-1.414 2.65728981-2.65728981 6.3696459-3.62280965 9.8005664-2.90852144l2.430738-2.43186193C11.7816792 4.58111626 6.15198938 5.65271062 2.27735 9.52735c-.3905.3905-1.0235.3905-1.414 0-.3905-.3905-.3905-1.0235 0-1.414 4.6714534-4.67191574 11.571522-5.78608437 17.3096457-3.34843552L22.7195.2195c.293-.2925.768-.2925 1.061 0zM12 18.5c.6905 0 1.25.5595 1.25 1.25S12.6905 21 12 21s-1.25-.5595-1.25-1.25.5595-1.25 1.25-1.25zm1.4175-4.81495c.9705.2455 1.8905.741 2.6485 1.499.3905.3905.3905 1.0235 0 1.414-.1955.1955-.451.293-.707.293-.256 0-.512-.0975-.707-.293-.7835333-.7835333-1.8301422-1.1445778-2.8581093-1.0880116L11.574 15.52855l1.8435-1.8435zm3.8154-3.8154c.848.4725 1.649 1.059 2.3685 1.779.391.39.391 1.023 0 1.414-.195.195-.451.293-.707.293-.2555 0-.5115-.098-.707-.293-.7285-.728-1.5575-1.291-2.439-1.7085zm2.1908-2.1908l1.4425-1.4425c.8.545 1.5615 1.168 2.2705 1.877.3905.3905.3905 1.0235 0 1.414-.1955.1955-.451.293-.707.293-.256 0-.5115-.0975-.707-.293-.5933333-.59333333-1.2283333-1.11861111-1.895162-1.57959491L19.4237 7.67885l1.4425-1.4425z"></path></svg>
         <p>You are currently offline.</p>
         <span onclick="window.location.href='index.html';">Refresh</span>
         <div id="cancel-offline" onclick="offline()">
-            <img src="img/cancel.png" alt="">
+            <img src="img/cancel.png" alt="" width="40%">
         </div>
     </div>
     <div id="new-message" onclick="chat()">
@@ -854,18 +1008,405 @@
             <img src="img/we-dont-do-that-here-black-panther.gif" alt="">
         </div>
     </div>
-    <div id="message" style="display: none;">
-        <div class="message-top">
-            <div class="message-top1">
-                <span>New message</span>
-                <div id="cancel-offline1" onclick="chat()">
-                    <img src="img/cancel1.png" alt="" width="10px" height="10px">
+    <div id="profile-menu" style="display: none;">
+        <div class="profile-plate">
+            <div class="main-profile">
+                <img src="img/avatar.jpg" alt="" width="40" height="40" style="border-radius: 100%; object-fit: cover;">
+                <span>Agbabiaka Omo-Thanos</span>
+            </div>
+            <hr class="profile-line">
+            <div class="see-profile"><span>See all profiles</span></div>
+        </div>
+        
+        <div class="menu-list">
+            <div class="wrapper">
+                <div class="icon-capsule">
+                    <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/ksoiDx1SUW6.png?_nc_eui2=AeGH5YX0-vHAGeacj1PK_Y0kPw97ouMoUdU_D3ui4yhR1af5X2y8jVhi5DdMiUWg1-k8SHI0wIHtBHPODcGgt0-F&quot;); background-position: -147px -105px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                </div>
+                <span> Settings & privacy</span>
+            </div>
+            <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/ksoiDx1SUW6.png?_nc_eui2=AeGH5YX0-vHAGeacj1PK_Y0kPw97ouMoUdU_D3ui4yhR1af5X2y8jVhi5DdMiUWg1-k8SHI0wIHtBHPODcGgt0-F&quot;); background-position: -108px -26px; background-size: auto; width: 24px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i>
+        </div>
+        <div class="menu-list">
+            <div class="wrapper">
+                <div class="icon-capsule">
+                    <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yw/r/XOA7FB9x4kr.png?_nc_eui2=AeEEs-wzkUhUJxYUennLg9NNbfeLmvWLq0Zt94ua9YurRilVhZhhZFhOgJ-6PBgXUe_gd9nkVkXwdHX9hkjw6XUG&quot;); background-position: 0px -318px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                </div>
+                <span>Help & support</span>
+            </div>
+            <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/ksoiDx1SUW6.png?_nc_eui2=AeGH5YX0-vHAGeacj1PK_Y0kPw97ouMoUdU_D3ui4yhR1af5X2y8jVhi5DdMiUWg1-k8SHI0wIHtBHPODcGgt0-F&quot;); background-position: -108px -26px; background-size: auto; width: 24px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i>
+        </div>
+        <div class="menu-list">
+            <div class="wrapper">
+                <div class="icon-capsule">
+                    <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/8K71K7SKDvZ.png?_nc_eui2=AeG1h7yNuDCAGmbYdYL0xX9d-eJy6DxDnYz54nLoPEOdjMg2IpUMehPW_DvBdcDaVfkEO9iZW-2IrEe6zht_19Tb&quot;); background-position: 0px -421px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                </div>
+                <span>Display & accessibility</span>
+            </div>
+            <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/ksoiDx1SUW6.png?_nc_eui2=AeGH5YX0-vHAGeacj1PK_Y0kPw97ouMoUdU_D3ui4yhR1af5X2y8jVhi5DdMiUWg1-k8SHI0wIHtBHPODcGgt0-F&quot;); background-position: -108px -26px; background-size: auto; width: 24px; height: 24px; background-repeat: no-repeat; display: inline-block;"></i>
+        </div>
+        <div class="menu-list">
+            <div class="wrapper">
+                <div class="icon-capsule">
+                    <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yw/r/XOA7FB9x4kr.png?_nc_eui2=AeEEs-wzkUhUJxYUennLg9NNbfeLmvWLq0Zt94ua9YurRilVhZhhZFhOgJ-6PBgXUe_gd9nkVkXwdHX9hkjw6XUG&quot;); background-position: 0px -150px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                </div>
+                <span>Give feedback</span>
+            </div>
+        </div>
+        <div class="menu-list">
+            <div class="wrapper">
+                <div class="icon-capsule">
+                    <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yg/r/PIHVSleJ5CJ.png?_nc_eui2=AeGhOlkwFDndspTXGrf10_4ch7sSKpqGvuaHuxIqmoa-5pqHLgpDToqIib0hEcONz6xGsY3LJWp-08D7DNE6satm&quot;); background-position: 0px -708px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                </div>
+                <span>Log Out</span>
+            </div>
+        </div>
+        <div class="section1-footer menu-footer">
+            <ul>
+                <li><a>Privacy</a><span> · </span></li>
+                <li><a>Terms</a><span> · </span></li>
+                <li><a>Advertising</a><span> · </span></li>
+                <li><a>Ad Choices<img src="img/copyright2.png" alt="" id="ads"></a><span> · </span></li>
+                <li><a>Cookies</a><span> · </span></li>
+            </ul>
+            <ul>
+                <li><a style="text-decoration: none;">More</a><span> · </span></li>
+                <li><a href="https://twitter.com/sawlew">sawlew</a><span> © 2023</span></li>
+            </ul>
+            
+        </div>
+    </div>
+    <div id="main-menu" style="display: none;">
+        <div class="upper-shell"><span>Menu</span></div>
+        <div class="inner-shell">
+            <div class="scrollable-div">
+                <div class="search search-menu">
+                    <label for="search"><svg fill="#65676B" viewBox="0 0 16 16" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xlup9mm x1kky2od"><g fill-rule="evenodd" transform="translate(-448 -544)"><g fill-rule="nonzero"><path d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z" transform="translate(448 544)"></path><path d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z" transform="translate(448 544)"></path><path d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z" transform="translate(448 544)"></path><path d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z" transform="translate(448 544)"></path></g></g></svg></label>
+                    <input type="search" name="search" placeholder="Search menu" class="bar bar1">
+                </div>
+                <h4 class="sub-title">Social</h4>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/MyXe34Z9V3E.png?_nc_eui2=AeEL8YpWgZvwY_uWpD6oXR9FLwu8Te6gztIvC7xN7qDO0ucuRstdKfMUDG6ujU3I14zIzMpoln1oqQjbthzZgHK7" alt="" style="height: 36px; width: 36px;">
+                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Stories</div>
+                        <div class="story-details">See relevant stories from people and Pages you follow.</div>
+                    </div>
+                </div>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/QILj4kKZMLW.png?_nc_eui2=AeHeSJg3TWYvdk4WzCIYPlJNuswBv2KYagK6zAG_YphqAt7CJMJ6o9mfbZFkTIdyEJsam5XeQToZs_ly_yYY1uKk" alt="" style="height: 36px; width: 36px;">
+                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Events</div>
+                        <div class="story-details">Organize or find events and other things to do online and nearby.</div>
+                    </div>
+                </div>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/tSXYIzZlfrS.png?_nc_eui2=AeGPd1s6sB_BZbqAknwhIEhgY2wdbxH-OX5jbB1vEf45fn5skbIgzgqo7GCIVBXC3IfzfXdc0dUIpRqwrXs8sScb" alt="" style="height: 36px; width: 36px;">                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Find friends</div>
+                        <div class="story-details">Search for friends or people you may know.</div>
+                    </div>
+                </div>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/Im_0d7HFH4n.png?_nc_eui2=AeGQWFLYLhwhrTOQZOhcLShHm5Q_-YdsEieblD_5h2wSJ10JDjWaM2YNYy5iFq5IfqpKUcNes-Ki42IK8E0mx94R" alt="" style="height: 36px; width: 36px;">                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Groups</div>
+                        <div class="story-details">Connect with people who share your interests.</div>
+                    </div>
+                </div>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/hLkEFzsCyXC.png?_nc_eui2=AeERuC4_w3nLqT0SKJqB0wvbH5Wgg_DAcfIflaCD8MBx8mEV5g7Eb1O58EfdE-uAe-98ROgn4esP4fCQOhwMHqIT" alt="" style="height: 36px; width: 36px;">                    </div>
+                    <div class="list-summary">
+                        <div class="stories">News Feed</div>
+                        <div class="story-details">See relevant posts from people and Pages you follow.</div>
+                    </div>
+                </div>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/nbUcQfHcgBv.png?_nc_eui2=AeHyvROCHdtRoLGdSh_NbDQYcKeSi1Y8wfpwp5KLVjzB-p9Uqp0k4w4NmipbGuBDl-S9EnavmHVQAdjSOv-u4HXv" alt="" style="height: 36px; width: 36px;">                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Favorites</div>
+                        <div class="story-details">View posts by Favorites</div>
+                    </div>
+                </div>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yF/r/kD5Sv0isIPs.png?_nc_eui2=AeFmw80TRy2bMCe6D_uYj-2lYEZpcuxvq3JgRmly7G-rcgvZrABx8QcGcz2RzmezhFGuMR6kaOLqMc2QW6a5ZGIY" alt="" style="height: 36px; width: 36px;">                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Most Recent</div>
+                        <div class="story-details">See the most recent posts from your friends, groups, Pages and more.</div>
+                    </div>
+                </div>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/0gH3vbvr8Ee.png?_nc_eui2=AeFEhGxlk3nRt4rhmmKaeq_4qWeiF2guI5upZ6IXaC4jm4lSlca1cVjD6HLq_AfOScwGXMg46kCEzzIJ_EW8YS-v" alt="" style="height: 36px; width: 36px;">                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Pages</div>
+                        <div class="story-details">Discover and connect with businesses on Facebook.</div>
+                    </div>
+                </div>
+
+                <hr class="menuLine">
+
+                <h4 class="sub-title">Entertainment</h4>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/Cx_zTHRcUJ0.png?_nc_eui2=AeFbsIgn5QiGY4okP8K_hku763xiySjh45vrfGLJKOHjm1XETgfQiCNb2sHffm8aC662t4UN9-ZMv_Cm2csSeemy" alt="" style="height: 36px; width: 36px;">                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Gaming Video</div>
+                        <div class="story-details">Watch and connect with your favorite games and streamers.</div>
+                    </div>
+                </div>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/3JN6bzIH9li.png?_nc_eui2=AeGHbl_vDwaSwXn6uNNXWaKbVzDn4hHCT-NXMOfiEcJP43SIPXC-RKLYmqz9qHhLlr8LXNOq2PcQuBflIh6odCLS" alt="" style="height: 36px; width: 36px;">
+                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Play Games</div>
+                        <div class="story-details">Play your favorite games.</div>
+                    </div>
+                </div>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/y-/r/FhOLTyUFKwf.png?_nc_eui2=AeG5EGtvapeTtjwEjw5rhLfbqF4NV7eRtieoXg1Xt5G2J54kR1Za3Obq_e-q_Od3o_D-xswaHMXVz2UyLEE56rlB" alt="" style="height: 36px; width: 36px;">
+                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Watch</div>
+                        <div class="story-details">A video destination personalized to your interests and connections.</div>
+                    </div>
+                </div>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/VhoyAd0w8bZ.png?_nc_eui2=AeE6lD6kZaNoM2pajgs1BDMCpUhCrtLCqR6lSEKu0sKpHtAl5gZtisE4YJTgmJhFi4MMDtB03pZ5iR4x7w20MVoI" alt="" style="height: 36px; width: 36px;">                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Live videos</div>
+                        <div class="story-details">Watch popular live videos from around the world.</div>
+                    </div>
+                </div>
+
+                <hr class="menuLine">
+
+                <h4 class="sub-title">Shopping</h4>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yM/r/vWBUs7aYAiK.png?_nc_eui2=AeFZh3Zsup7CUsxKekzL5diR-HOk2XCzpUn4c6TZcLOlScj0hPQ0qjRzWM6B8IyFWumdf5mjhPb4VEn5Vu0CeZVs" alt="" style="height: 36px; width: 36px;">                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Orders and payments</div>
+                        <div class="story-details">A seamless, secure way to pay on the apps you already use.</div>
+                    </div>
+                </div>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/MN44Sm-CTHN.png?_nc_eui2=AeEkQK4oiDzUWBrGS7QtMoT9rr7hPsNNZ9iuvuE-w01n2DmC63XplPAsLorgtletogRIurar6YeTjFzCRFAaX4xv" alt="" style="height: 36px; width: 36px;">                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Marketplace</div>
+                        <div class="story-details">Buy and sell in your community.</div>
+                    </div>
+                </div>
+
+                <hr class="menuLine">
+
+                <h4 class="sub-title">Personal</h4>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/cbPxeioybsd.png?_nc_eui2=AeHgFB9KwrGJHDW9lMh4xXvHkxZ-E-Ft6aiTFn4T4W3pqDgkvJ0ykBsjlXBi1qgA6flPRNeDHn0A_ZwCU8W5rxa7" alt="" style="height: 36px; width: 36px;">
+                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Recent and activity</div>
+                        <div class="story-details">See all the ads you interacted with on Facebook.</div>
+                    </div>
+                </div>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/tYxGXJRPH5q.png?_nc_eui2=AeExrl_chzBJ7byV4tDT2pvD-TlT3iljuAT5OVPeKWO4BOFYX5Dk1SenIa38CkR5vg2U4v2H9pyH22vC-le1Dwnf" alt="" style="height: 36px; width: 36px;">
+                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Memories</div>
+                        <div class="story-details">Browse your old photos, videos and posts on Facebook.</div>
+                    </div>
+                </div>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yA/r/KlDlsO3UxDM.png?_nc_eui2=AeFV2OHvuYBsDKyuNH_rLafg0RJbPvyxnwTREls-_LGfBB3zD-Vm-W6i3CgBV1maLO4hxy-Pd-SbyCv2Pqil4Fpd" alt="" style="height: 36px; width: 36px;">
+                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Saved</div>
+                        <div class="story-details">Find posts, photos and videos that you save for later.</div>
+                    </div>
+                </div>
+
+                <hr class="menuLine">
+
+                <h4 class="sub-title">Professional</h4>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yM/r/C949oxkze-S.png?_nc_eui2=AeF1b0cs4SoefUSe7RliP0HHXhIyGjfjS35eEjIaN-NLft-O2ClP6WyYwWZB-zyf9oRqwLaVU6_6HdEu8KRpHPmZ" alt="" style="height: 36px; width: 36px;">
+                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Ads Manager</div>
+                        <div class="story-details">Create, manage and track the performance of your ads.</div>
+                    </div>
+                </div>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yu/r/v8P0lSbIHai.png?_nc_eui2=AeEhn-Rqgqr9e4GegcwnF4hdUAZaXj_SGHpQBlpeP9IYem1i2ohaPD2nogmCmQu8bTbJjStJQs-Zgg-m0L2v4Ks8" alt="" style="height: 36px; width: 36px;">
+                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Professional dashboard</div>
+                        <div class="story-details">Get insights, create ads and explore management tools to help reach your audience.</div>
+                    </div>
+                </div>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/lqymE2iRETE.png?_nc_eui2=AeGCq-7zRRW2k6n2MMicOMQSKok-rA86GNkqiT6sDzoY2UxJyo-FYYN9FMTn2HhvwaVG86U5gHBYGwp1QPRxwjGl" alt="" style="height: 36px; width: 36px;">
+                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Ad Center</div>
+                        <div class="story-details">Manage all the ads you create in Pages, with streamlined features.</div>
+                    </div>
+                </div>
+
+                <hr class="menuLine">
+
+                <h4 class="sub-title">Community Resources</h4>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yS/r/4LP02rGQaMl.png?_nc_eui2=AeHUVB9XYTJUvth7hCf7zpZSASImEVgu8wsBIiYRWC7zC2o0_H9X6lKxULjGXGqqvKdMxFZupYfxfELTsOyCf0sH" alt="" style="height: 36px; width: 36px;">
+                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Climate Science Center</div>
+                        <div class="story-details">Learn about climate change and its effects.</div>
+                    </div>
+                </div>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/5CPaqlTUepF.png?_nc_eui2=AeE5S4rtYZpVbpC7wI9lYOCEr-lqgfMCHLav6WqB8wIctjxGEddMZwrLKIey8z0yzNshihepV6hOxJ6jezF8tt3M" alt="" style="height: 36px; width: 36px;">
+                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Crisis response</div>
+                        <div class="story-details">Find the latest updates for recent criseshappening around the world.</div>
+                    </div>
+                </div>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/FMv4tTIpfwB.png?_nc_eui2=AeH7EBhtuzDc6Hh4ZSubxL3HaL6MkMd3v8VovoyQx3e_xa2V8juPbxW0M28C97Fg_9SXBuj87o_G0vnqBv9zGnf4" alt="" style="height: 36px; width: 36px;">
+                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Fundraisers</div>
+                        <div class="story-details">Donate and raise money for nonprofits and personal causes.</div>
+                    </div>
+                </div>
+                <hr class="menuLine">
+
+                <h4 class="sub-title">More from Meta</h4>
+                <div class="drop-menu">
+                    <div class="menu-image">
+                        <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yt/r/ilSiTyZwdJA.png?_nc_eui2=AeGhL4d70443IWavPnCCyPT9QbKYMVZBqX5BspgxVkGpftj5FjMXTCEMTsRrxjEIWi8bPXaGwFkzVed-iMAfMHql" alt="" style="height: 36px; width: 36px;">
+                    </div>
+                    <div class="list-summary">
+                        <div class="stories">Messenger Kids</div>
+                        <div class="story-details">Let kids message with close friends and family.</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="fixed-div">
+                    <p class="create-title">Create</p>
+                <!-- <div class="upper-shell create"><span>Create</span></div> -->
+                    <div class="fixed-list">
+                        <div class="list-icon-div">
+                            <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yu/r/Bp6YqaLxUJC.png?_nc_eui2=AeF92GCv6M10cvW5QK4OF8AZ4kbpBYUlLWjiRukFhSUtaEV9gFoODtoSVbmFZcLoDhUe9gdjl585g9_1AhHOwhep&quot;); background-position: 0px -591px; background-size: 25px 1599px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                        </div>
+                        <span class="mini-title">Post</span>
+                    </div>
+                    <div class="fixed-list">
+                        <div class="list-icon-div">
+                            <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/Oi0ElXnpQcp.png?_nc_eui2=AeEkHA8aWgIlHJmV_0PStu_osfXo-zxIu4Kx9ej7PEi7gqg_FBvwMDgT5j65723wJjeB8tUXTaCHKPDkH212evuh&quot;); background-position: 0px -400px; background-size: 33px 506px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                        </div>
+                        <span class="mini-title">Story</span>
+                    </div>
+                    <div class="fixed-list">
+                        <div class="list-icon-div">
+                            <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yu/r/Bp6YqaLxUJC.png?_nc_eui2=AeF92GCv6M10cvW5QK4OF8AZ4kbpBYUlLWjiRukFhSUtaEV9gFoODtoSVbmFZcLoDhUe9gdjl585g9_1AhHOwhep&quot;); background-position: 0px -213px; background-size: 25px 1599px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                        </div>
+                        <span class="mini-title">Room</span>
+                    </div>
+
+                    <hr class="listLine">
+
+                    <div class="fixed-list">
+                        <div class="list-icon-div">
+                            <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yu/r/Bp6YqaLxUJC.png?_nc_eui2=AeF92GCv6M10cvW5QK4OF8AZ4kbpBYUlLWjiRukFhSUtaEV9gFoODtoSVbmFZcLoDhUe9gdjl585g9_1AhHOwhep&quot;); background-position: 0px -192px; background-size: 25px 1599px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                        </div>
+                        <span class="mini-title">Page</span>
+                    </div>
+                    <div class="fixed-list">
+                        <div class="list-icon-div">
+                            <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yu/r/Bp6YqaLxUJC.png?_nc_eui2=AeF92GCv6M10cvW5QK4OF8AZ4kbpBYUlLWjiRukFhSUtaEV9gFoODtoSVbmFZcLoDhUe9gdjl585g9_1AhHOwhep&quot;); background-position: 0px -948px; background-size: 25px 1599px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                        </div>
+                        <span class="mini-title">Ad</span>
+                    </div>
+                    <div class="fixed-list">
+                        <div class="list-icon-div">
+                            <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/Oi0ElXnpQcp.png?_nc_eui2=AeEkHA8aWgIlHJmV_0PStu_osfXo-zxIu4Kx9ej7PEi7gqg_FBvwMDgT5j65723wJjeB8tUXTaCHKPDkH212evuh&quot;); background-position: 0px -190px; background-size: 33px 506px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                        </div>
+                        <span class="mini-title">Group</span>
+                    </div>
+                    <div class="fixed-list">
+                        <div class="list-icon-div">
+                            <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yu/r/Bp6YqaLxUJC.png?_nc_eui2=AeF92GCv6M10cvW5QK4OF8AZ4kbpBYUlLWjiRukFhSUtaEV9gFoODtoSVbmFZcLoDhUe9gdjl585g9_1AhHOwhep&quot;); background-position: 0px -360px; background-size: 25px 1599px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                        </div>
+                        <span class="mini-title">Event</span>
+                    </div>
+                    <div class="fixed-list">
+                        <div class="list-icon-div">
+                            <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/Oi0ElXnpQcp.png?_nc_eui2=AeEkHA8aWgIlHJmV_0PStu_osfXo-zxIu4Kx9ej7PEi7gqg_FBvwMDgT5j65723wJjeB8tUXTaCHKPDkH212evuh&quot;); background-position: 0px -379px; background-size: 33px 506px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                        </div>
+                        <span class="mini-title">Marketplace listing</span>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="messenger" style="display: none;">
+        <div class="chat-container">
+            <div class="chats-div">
+                <p class="chats-title">Chats</p>
+                <div class="logos">
+                    <div class="logo"><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/7NW2ZpF3EJO.png?_nc_eui2=AeGk_fr_gwOJIp_9S5OozI1bPPamyKKijOs89qbIoqKM618IS0ouW4VXYBJZQzTQNaEfNgH9q6bjbo5kEP7mAimL&quot;); background-position: -42px -105px; background-size: 189px 186px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                    <div class="logo"><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/Oi0ElXnpQcp.png?_nc_eui2=AeEkHA8aWgIlHJmV_0PStu_osfXo-zxIu4Kx9ej7PEi7gqg_FBvwMDgT5j65723wJjeB8tUXTaCHKPDkH212evuh&quot;); background-position: 0px -337px; background-size: 33px 506px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                    <div class="logo"><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/ETTC_o-M93e.png?_nc_eui2=AeF9JCIngD5djO27ICeMVYOkMzEEsiIZd0kzMQSyIhl3SXHLfaaiIohrA4rkanA7zy2l6HARwo60VYOCbsdzKd_3&quot;); background-position: 0px -213px; background-size: 25px 1565px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i></div>
+                    <div class="logo"><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/ETTC_o-M93e.png?_nc_eui2=AeF9JCIngD5djO27ICeMVYOkMzEEsiIZd0kzMQSyIhl3SXHLfaaiIohrA4rkanA7zy2l6HARwo60VYOCbsdzKd_3&quot;); background-position: 0px -1394px; background-size: 25px 1565px; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i></div>
                 </div>
             </div>
-            <div class="message-top2">
-                <span>To:</span>
-                <input type="text">
+            <div class="search search-menu search-messenger">
+                <label for="search"><svg fill="#65676B" viewBox="0 0 16 16" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xlup9mm x1kky2od"><g fill-rule="evenodd" transform="translate(-448 -544)"><g fill-rule="nonzero"><path d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z" transform="translate(448 544)"></path><path d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z" transform="translate(448 544)"></path><path d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z" transform="translate(448 544)"></path><path d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z" transform="translate(448 544)"></path></g></g></svg></label>
+                <input type="search" name="search" placeholder="Search Messenger" class="bar bar1 bar2">
             </div>
+            <div class="another-head">
+                <div class="inbox"><p>Inbox</p></div>
+                <div class="community"><p>Communities</p></div>
+            </div>
+            <div class="postDetails">
+                <img src="img/avatar.jpg" alt="" width="60" height="60" class="postprof" style="object-fit: cover;">
+                <div class="timestamp">
+                    <p class="chatter">Thanos</p>
+                    <div class="datestamp">
+                        <p>What's up</p>
+                        <span> · </span>
+                        <p>2y</p>
+                    </div>
+                </div>
+                <svg class="xsrhx6k" fill="grey" height="12px" role="img" viewBox="2 2 20 20" width="12px" xmlns="http://www.w3.org/2000/svg"><title>Delivered</title><path d="m12 2a10 10 0 1 0 10 10 10.011 10.011 0 0 0 -10-10zm5.219 8-6.019 6.016a1 1 0 0 1 -1.414 0l-3.005-3.008a1 1 0 1 1 1.419-1.414l2.3 2.3 5.309-5.31a1 1 0 1 1 1.41 1.416z"></path></svg>
+            </div>
+        </div>
+        <div class="bottom-chat">
+            <p>See all in Messenger</p>
         </div>
     </div>
 </body>

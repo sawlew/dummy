@@ -9,11 +9,10 @@
 }
 
 body{
-    /* background-color: rgb(43, 23, 219); */
-    /* overflow-y: auto; */
     display: flex;
     flex-direction: column;
     height: 100vh;
+    overflow: hidden;
 }
 
 
@@ -25,29 +24,23 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    /* background-color: red; */
-    /* border-bottom: 1px solid rgb(240, 236, 236); */
-
     position: fixed;
-    /* margin-top: -60px; */
-    /* border: 4px solid black; */
 }
 
 #start{
     display: flex;
     align-items: center;
     margin-left: 10px;
-    /* justify-content: center; */
-    /* background-color: green; */
 }
 
 #mid{
+    /* border: 1px solid red; */
     width: 30em;
     display: flex;
     height: 60px;
     /* background-color: red; */
     justify-content: space-between;
-    margin-right: 108px;
+    margin-right: 100px;
 }
 
 .mid{
@@ -99,7 +92,7 @@ body{
     margin-right: 10px;
 }
 
-#last-header{
+#last-header, #last-header1{
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -112,7 +105,7 @@ body{
     cursor: pointer;
 }
 
-#last-header:hover{
+#last-header:hover, #last-header1:hover{
     background: rgb(211, 211, 212);
 }
 
@@ -140,6 +133,7 @@ body{
     height: 15px;
     width: 15px;
 }
+
 #icon-profile{
     border-radius: 100%;
 }
@@ -149,7 +143,7 @@ body{
     align-items: center;
 }
 
-#search{
+.search{
     /* border: 2px solid green; */
     border-radius: 30px;
     width: 15em;
@@ -170,7 +164,7 @@ label{
     margin-left: 5px;
 }
 
-#bar{
+.bar{
     width: 30em;
     height: 100%;
     border-radius: 30px;
@@ -181,21 +175,16 @@ label{
     border: none;
 }
 
-#bar:focus{
+.bar:focus{
     outline: none;
 }
 
 main{
     margin-top: 60px;
-    /* padding-top: 20px; */
-    /* background-color: rgba(12, 160, 98, 0.774); */
-    /* border: 2px solid rgb(119, 18, 18); */
-    /* position: fixed; */
     width: 100%;
     display: flex;
-    /* justify-content: space-between; */
     overflow: auto;
-    /* height: 100vh; */
+    height: calc(100vh - 60px);
     position: relative;
 }
 
@@ -218,60 +207,68 @@ main{
     background: #F0F2F5;
 }
 
-
 .section1{
     /* border: 2px solid green; */
     background-color: #F0F2F5;
     width: 25%;
+    height: calc(100vh - 60px);
     font-size: 15px;
     color: #050505;
     font-weight: 400;
     padding-left: 5px;
     /* max-height: 100vh; */
 }
-/**********************************scrollbar**************************************************/
-.scrollbar1, .scrollbar2, .scrollbar3{
+
+.section{
     padding-top: 20px;
+}
+/**********************************scrollbar**************************************************/
+.scrollbar1{
+    overflow: hidden;
+}
+
+.scrollbar1::-webkit-scrollbar{
+    width: 5px;
+    transition: 3ms ease;
+}
+
+.scrollbar1::-webkit-scrollbar-track{
+    -webkit-box-shadow:inset 0 0 6px rgba(161, 156, 156, 0.3);
+    /* border-radius:5px; */
+}
+
+.scrollbar1::-webkit-scrollbar-thumb{
+    border-radius:5px;
+    -webkit-box-shadow: inset 0 0 6px grey;
+}
+
+.scrollbar1:hover{
     overflow-y: scroll;
-    /* visibility: hidden; */
-    /* overflow: hidden; */
 }
 
-::-webkit-scrollbar{
-    /* background: #1B74E4; */
-    /* visibility: hidden; */
+.scrollbar2, .scrollbar3{
+    overflow: auto;
+}
+
+.scrollbar2::-webkit-scrollbar, .scrollbar3::-webkit-scrollbar{
     display: none;
-    /* width: 10px; */
-    /* overflow-y: auto; */
 }
-
-/*
-.scrollbar:hover{
-    /* width: 12px; */
-    /* overflow-y: auto;
-    display: auto;
-    border: 10px solid red; */
-
-/* } */
-/****************************************coming back to you**********************************************/
-#section1-footer{
+/****************************************scrollbar end**********************************************/
+.section1-footer{
     width: 100%;
-    height: 60px;
-    /* border: 2px solid red; */
+    height: 50px;
     padding-left: 5px;
-    /* display: inline-flexbox; */
 }
 
-#section1-footer ul{
+.section1-footer ul{
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: space-evenly; */
     line-height: 1px;
     margin-top: 7px;
 }
 
-#section1-footer ul li, #section1-footer ul li a{
+.section1-footer ul li, .section1-footer ul li a{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -279,16 +276,17 @@ main{
     color: #65676B;
 }
 
-#section1-footer ul li a:hover{
+.section1-footer ul li a:hover{
     text-decoration: underline;
     cursor: pointer;
 }
 
 #ads{
     filter: contrast(0);
+    margin-left: 2px;
 }
 
-#section1-footer ul li span{
+.section1-footer ul li span{
     margin: 0 5px;
     color: #65676B;
 }
@@ -347,7 +345,7 @@ main{
     /* border-left: 2px solid green; */
 }
 
-#container1{
+#container1, #people{
     background: white;
     width: 500px;
     border: 1px solid #dddddd;
@@ -356,18 +354,14 @@ main{
     margin: auto;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* overflow: auto; */
     position: relative;
 }
 
-.top{
+.top, .top-people{
     display: flex;
     width: 100%;
     margin: 0 auto;
     height: 60px;
-
     justify-content: center;
     border-bottom: 1px solid #cccdce;
     border-radius: 10px;
@@ -375,21 +369,23 @@ main{
     border-bottom-right-radius: 0;
 }
 
-.cover, .cover-reel{
-    /* border: 3px; */
+#cover, #cover-reel{
+    border: 3px solid white;
     padding: 3px;
     width: 45%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-}
-.cover{
-    border-bottom: 3px solid #1B74E4;
-}
-.cover-reel:hover{
-    padding: 3px 3px 0 3px;
     border-bottom: 3px solid white;
+}
+
+.reel:hover, .story:hover{
+    background: #F0F2F5;
+}
+
+#cover{
+    border-bottom: 3px solid #1B74E4;
 }
 
 .reel, .story{
@@ -414,21 +410,12 @@ main{
     margin-left: 10px;
 }
 
-.reel:hover{
-    background: #F0F2F5;
-}
-
-#cards{
+#cards, #cards-people{
     overflow-x: auto;
-    max-width: 500px;
+    /* max-width: 500px; */
     height: 232px;
-    /* border: 2px solid purple; */
     display: flex;
-    flex-direction: row;
-    /* justify-content: space-evenly; */
     align-items: center;
-    /* position: relative; */
-
 }
 
 .card{
@@ -449,7 +436,7 @@ main{
 .profileIcon{
     background-image: url(img/avatar.jpg);
     background-size: cover;
-    border: 3px solid #1B74E4;
+    border: 4px solid #1B74E4;
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -464,7 +451,14 @@ main{
     left: 7px;
     color: white;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.profName i{
+    filter: invert(1);
+    margin-right: 5px;
 }
 
 .card1{
@@ -478,7 +472,7 @@ main{
     padding: 0;
     margin-left: 20px;
 }
-.card8{
+.card-last{
     margin-right: 20px;
 }
 
@@ -487,7 +481,6 @@ main{
     min-width: 112.5px;
     position: absolute;
     border-radius: 10px;
-
 }
 
 
@@ -532,7 +525,7 @@ main{
     font-size: 1rem;
 
 }
-#titleStatus{
+#titleStatus, #titleStatus1{
     position: relative;
     height: 200px;
     width: 112.5px;
@@ -553,7 +546,7 @@ main{
 
 }
 
-#cards::-webkit-scrollbar{
+#cards::-webkit-scrollbar, #cards-people::-webkit-scrollbar{
     display: none;
 }
 
@@ -646,13 +639,23 @@ hr{
     border: 1px solid #dddddd;
 }
 
-#slideLeft, #slideRight{
+#slideLeft, #slideRight, .slideLeft, .slideRight{
     width: 50px;
     height: 50px;
     border-radius: 100%;
     position: absolute;
+    border: none;
+    background: hsla(0, 1%, 39%, 0.1);
+    cursor: pointer;
+}
+
+#slideLeft:hover, #slideRight:hover, .slideLeft:hover, .slideRight:hover{
     border: 1px solid #e9eaec;
-    background: white;
+    backdrop-filter: blur(5px);
+}
+
+#slideLeft:active, #slideRight:active, .slideLeft:active, .slideRight:active{
+    border: none;
 }
 
 #slideRight{
@@ -716,7 +719,7 @@ hr{
     justify-content: end;
 }
 
-#three-dots, #cancel, #cancel-offline, #cancel-offline1{
+#three-dots, #cancel, #cancel-offline1{
     width: 30px;
     height: 30px;
     /* border: 1px solid lime; */
@@ -727,7 +730,22 @@ hr{
     cursor: pointer;
 }
 
-#three-dots:hover, #cancel:hover, #cancel-offline:hover, #cancel-offline1:hover{
+#cancel-offline{
+    background: rgb(68, 67, 67);
+    width: 25px;
+    height: 25px;
+    /* border: 1px solid lime; */
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#cancel-offline:hover{
+    background: rgb(151, 151, 151);
+}
+#three-dots:hover, #cancel:hover, #cancel-offline1:hover{
     background: #F0F2F5;
 }
 
@@ -809,10 +827,8 @@ hr{
 }
 
 .like{
-    /* border-right: 2px solid purple; */
     border-radius: 100%;
-    /* position: absolute; */
-    /* right: 20px; */
+    z-index: 1;
 }
 
 .love{
@@ -956,6 +972,7 @@ hr{
 
 #see-all p{
     color: #1B74E4;
+    font-weight: 600;
 }
 
 .friend-request{
@@ -1014,7 +1031,7 @@ hr{
 }
 
 .friend-details span{
-    margin-left: 115px;
+    margin-left: 135px;
     font-size: 12px;
     color: #1B74E4;
 }
@@ -1040,8 +1057,16 @@ hr{
     color: white;
 }
 
+.confirm1:hover{
+    background: #5b94da;
+}
+
 .confirm2{
     background: #c2c5c7;
+}
+
+.confirm2:hover{
+    background: #c7c9ca;
 }
 
 h4{
@@ -1168,13 +1193,9 @@ h4{
     /* color: #050505; */
     box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
     backdrop-filter: blur(5px);
+    z-index: 10;
 }
 .warning_overlay{
-    /* display: none; */
-    /* border: 10px solid blue; */
-    /* background: #1B74E4; */
-    /* opacity: 0.5; */
-    /* filter: blur(1000px); */
     width: 100%;
     height: 100vh;
     position: relative;
@@ -1215,10 +1236,11 @@ h4{
 
 
 #offline{
-    width: 305px;
+    width: 320px;
     height: 70px;
     padding: 10px;
-    background: white;
+    /* background: white; */
+    background: #1f2023;
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -1227,11 +1249,16 @@ h4{
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 1px 5px rgb(185, 183, 183);
+    z-index: 2;
 }
 
 #offline p, #offline span, .message-top1 span{
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#offline p{
+    color: white;
 }
 
 #offline span{
@@ -1244,7 +1271,7 @@ h4{
 }
 
 #cancel-offline img{
-    filter: contrast(0.2);
+    filter: invert(1);
 }
 
 .hashtag{
