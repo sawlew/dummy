@@ -1039,14 +1039,14 @@ hr{
     font-weight: 600;
 }
 
-.friend-request{
-    /* border: 1px solid red; */
+#friend-request{
     display: flex;
-    /* justify-content: space-between; */
-    /* margin-left: 10px; */
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
+}
+.offchat{
+    opacity: 0.6;
 }
 
 .others{
@@ -1217,7 +1217,7 @@ h4{
     margin-bottom: 20px;
 }
 
-#three-dots1:hover, .notification:hover, #see-all:hover, .friend-request:hover, .birthday:hover, .contact-icons:hover, .chats:hover, .new-group:hover{
+#three-dots1:hover, .notification:hover, #see-all:hover, #friend-request:hover, .birthday:hover, .contact-icons:hover, .chats:hover, .new-group:hover{
     background: #e5e6e7;
 }
 
@@ -1283,8 +1283,8 @@ h4{
 
 .close-warning{
     border: 5px solid black;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
     position: absolute;
     /* margin: 0 auto; */

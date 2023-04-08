@@ -221,3 +221,19 @@ function chat(){
         m.style.display = "none";
     }
 }
+
+function friend(){
+    // const fri = document.getElementById("request");
+    // const req = document.getElementById("friend-request");
+    // if (fri.style.display === "flex"){
+        // fri.style.display = "none";
+        // req.style.display = "none";
+    // }
+    // setTimeout(function() {
+        // $("#friend-request").fadeOut(1500);
+        // $("#request").fadeOut(1500);
+    // }, 3000);
+    setTimeout(function() {
+        $("#request").fadeOut(1500);
+    },3000);
+}
