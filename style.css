@@ -11,6 +11,7 @@
 body{
     display: flex;
     flex-direction: column;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
 }
@@ -92,7 +93,7 @@ body{
     margin-right: 10px;
 }
 
-#last-header, #last-header1{
+#last-header, #last-header1, #last-header2{
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -143,7 +144,7 @@ body{
     align-items: center;
 }
 
-.search{
+.search, .search1, .search2{
     /* border: 2px solid green; */
     border-radius: 30px;
     width: 15em;
@@ -158,13 +159,17 @@ body{
     /* position: relative; */
 
 }
+.search2{
+    width: 90%;
+    margin: 0 auto;
+}
 
 label{
     height: 1em;
     margin-left: 5px;
 }
 
-.bar{
+.bar, .bar1, .bar2{
     width: 30em;
     height: 100%;
     border-radius: 30px;
@@ -209,41 +214,35 @@ main{
 
 .section1{
     /* border: 2px solid green; */
+    border: none;
     background-color: #F0F2F5;
     width: 25%;
     height: calc(100vh - 60px);
     font-size: 15px;
-    color: #050505;
+    /* color: #050505; */
     font-weight: 400;
     padding-left: 5px;
-    /* max-height: 100vh; */
+    overflow: auto;
 }
 
 .section{
     padding-top: 20px;
 }
 /**********************************scrollbar**************************************************/
-.scrollbar1{
-    overflow: hidden;
-}
 
 .scrollbar1::-webkit-scrollbar{
     width: 5px;
     transition: 3ms ease;
 }
 
-.scrollbar1::-webkit-scrollbar-track{
+.scrollbar1:hover::-webkit-scrollbar-track{
     -webkit-box-shadow:inset 0 0 6px rgba(161, 156, 156, 0.3);
-    /* border-radius:5px; */
+    border-radius:5px;
 }
 
-.scrollbar1::-webkit-scrollbar-thumb{
+.scrollbar1:hover::-webkit-scrollbar-thumb{
     border-radius:5px;
     -webkit-box-shadow: inset 0 0 6px grey;
-}
-
-.scrollbar1:hover{
-    overflow-y: scroll;
 }
 
 .scrollbar2, .scrollbar3{
@@ -434,7 +433,7 @@ main{
 }
 
 .profileIcon{
-    background-image: url(img/avatar.jpg);
+    /* background-image: url(img/avatar.jpg); */
     background-size: cover;
     border: 4px solid #1B74E4;
     width: 40px;
@@ -443,6 +442,15 @@ main{
     position: absolute;
     left: 15px;
     top: 10px;
+}
+.profImage{
+    background-image: url(img/proxima.webp);
+}
+.profImage1{
+    background-image: url(img/cull.jpg);
+}
+.profImage2{
+    background-image: url(img/ebony.jfif);
 }
 
 .profName{
@@ -668,7 +676,7 @@ hr{
     bottom: 88px;
 }
 
-#container3{
+#container3, .memcontainer, .memory{
     width: 500px;
     margin: 15px auto;
     border: 1px solid #dddddd;
@@ -694,8 +702,8 @@ hr{
 
 
 #postDetails{
-    /* border: 2px solid red; */
-    width: 80%;
+    /* border: 1px solid red; */
+    /* width: 80%; */
     display: flex;
     align-items: center;
     justify-content: start;
@@ -709,6 +717,7 @@ hr{
 }
 
 .postprof{
+    /* width: 30%; */
     border-radius: 100%;
     /* border: 1px solid green; */
 }
@@ -869,13 +878,17 @@ hr{
     display: flex;
     justify-content: space-between;
     padding: 5px 0;
+    border-bottom: 1px solid #cdcecf;
     margin-bottom: 5px;
+}
+.lower-option1{
+    border-bottom: none;
 }
 
 .lower-opt{
     /* border: 2px solid green; */
     width: 33%;
-    height: 50px;
+    height: 35px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -898,8 +911,59 @@ hr{
     background: #F0F2F5;
 }
 
-
-
+.comment-area{
+    /* border: 1px solid red; */
+    width: 90%;
+    align-items: center;
+}
+.self-comment, .input-comment, .media-files{
+    display: flex;
+}
+.self-comment{
+    justify-content: space-between;
+    /* border: 1px solid green; */
+}
+.input-comment{
+    /* border: 1px solid green; */
+    width: 90%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: #F0F2F5;
+}
+.media-files{
+    width: 35%;
+    justify-content: space-evenly;
+}
+.write-comment{
+    padding-left: 10px;
+    color: grey;
+}
+.media{
+    /* border: 1px solid yellow; */
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* background: red; */
+}
+.media:hover{
+    background: rgb(230, 229, 229);
+}
+.press{
+    margin-left: 50px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: default;
+}
+.sticker{
+    filter: opacity(0.6);
+}
 
 
 
@@ -1035,13 +1099,7 @@ hr{
     font-size: 12px;
     color: #1B74E4;
 }
-.dot{
-    border: 1px solid #1B74E4;
-    background-color: #1B74E4;
-    width: 8px;
-    height: 8px;
-    border-radius: 100%;
-}
+
 .confirm{
     justify-content: center;
     /* border: 1px solid green; */
@@ -1204,8 +1262,10 @@ h4{
 .warning{
     position: absolute;
     /* border: 2px solid red; */
-    width: 600px;
-    height: 350px;
+    /* width: 600px; */
+    /* height: 350px; */
+    width: 100%;
+    height: 100vh;
     margin: auto;
     top: 0;
     bottom: 0;
@@ -1217,6 +1277,7 @@ h4{
 }
 
 .warning img{
+    width: 50%;
     border-radius: 10px;
 }
 
@@ -1226,8 +1287,8 @@ h4{
     height: 30px;
     border-radius: 100%;
     position: absolute;
-    right: 0;
-    top: 0;
+    /* margin: 0 auto; */
+    top: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1384,4 +1445,67 @@ h4{
     background: #f3f4f5;
     width: 70px;
     height: 10px;
+}
+.memory{
+    width: 500px;
+    border: 1px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
+    margin: 0 auto;
+}
+.memcontainer{
+    width: 90%;
+    margin-top: 0;
+}
+.memthing{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #dddddd;
+}
+.memthing1{
+    text-align: center;
+    font-weight: 600;
+}
+.seemoremem:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.heading{
+    /* border: 1px solid green; */
+    font-size: 15px;
+}
+.memhead{
+    /* border: 1px solid red; */
+    margin-left: 5px;
+    width: fit-content;
+}
+
+.mem-picture{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.mem-date{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+.mem-date p, .mem-date span{
+    font-size: 13px;
+    font-weight: 400;
+    color: #646262;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.mem-date p:hover{
+    text-decoration: underline;
+}
+
+strong{
+    cursor: pointer;
+}
+strong:hover{
+    text-decoration: underline;
 }

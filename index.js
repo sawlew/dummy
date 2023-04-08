@@ -48,51 +48,127 @@ function offline(){
     }
 }
 
-function chat(){
-    var m = document.getElementById("message");
-    if (m.style.display === "none"){
-        m.style.display = "block";
-    }else{
-        m.style.display = "none";
-    }
-}
-
-function profileMenu(){
-    var m = document.getElementById("profile-menu");
-    if (m.style.display === "none"){
-        m.style.display = "block";
-    }else{
-        m.style.display = "none";
-    }
-}
-
-function messenger(){
-    var m = document.getElementById("messenger");
-    var logo = document.getElementById("mess-svg");
-    var bg = document.getElementById("last-header1");
-    if (m.style.display === "none"){
-        m.style.display = "flex";
-        logo.style.fill = "#1B74E4";
-        bg.style.background = "#E7F3FF";
-    }else{
-        m.style.display = "none";
-        logo.style.fill = "black";
-        bg.style.background = "#e3e5e9";
-    }
-}
-
 function mainMenu(){
     var logo = document.getElementById("menu-svg");
     var m = document.getElementById("main-menu");
     var bg = document.getElementById("last-header");
+
+    var m1 = document.getElementById("messenger");
+    var logo1 = document.getElementById("mess-svg");
+    var bg1 = document.getElementById("last-header1");
+    var m2 = document.getElementById("profile-menu");
+    var m3 = document.getElementById("notification1");
+    var logo3 = document.getElementById("notify");
+    var bg3 = document.getElementById("last-header2");
+
     if (m.style.display === "none"){
         m.style.display = "flex";
         logo.style.fill = "#1B74E4";
         bg.style.background = "#E7F3FF";
+
+        m2.style.display = "none";
+        m1.style.display = "none";
+        logo1.style.fill = "black";
+        bg1.style.background = "#e3e5e9";
+        m3.style.display = "none";
+        logo3.style.fill = "black";
+        bg3.style.background = "#e3e5e9";
     }else{
         m.style.display = "none";
         logo.style.fill = "black";
         bg.style.background = "#e3e5e9";
+    }
+}
+
+function messenger(){
+    var m1 = document.getElementById("messenger");
+    var logo1 = document.getElementById("mess-svg");
+    var bg1 = document.getElementById("last-header1");
+
+    var logo = document.getElementById("menu-svg");
+    var m = document.getElementById("main-menu");
+    var bg = document.getElementById("last-header");
+    var m2 = document.getElementById("profile-menu");
+    var m3 = document.getElementById("notification1");
+    var logo3 = document.getElementById("notify");
+    var bg3 = document.getElementById("last-header2");
+    if (m1.style.display === "none"){
+        m1.style.display = "flex";
+        logo1.style.fill = "#1B74E4";
+        bg1.style.background = "#E7F3FF";
+
+        m2.style.display = "none";
+        m.style.display = "none";
+        logo.style.fill = "black";
+        bg.style.background = "#e3e5e9";
+        m3.style.display = "none";
+        logo3.style.fill = "black";
+        bg3.style.background = "#e3e5e9";
+    }else{
+        m1.style.display = "none";
+        logo1.style.fill = "black";
+        bg1.style.background = "#e3e5e9";
+    }
+}
+
+function profileMenu(){
+    var m2 = document.getElementById("profile-menu");
+
+    var logo = document.getElementById("menu-svg");
+    var m = document.getElementById("main-menu");
+    var bg = document.getElementById("last-header");
+    var m1 = document.getElementById("messenger");
+    var logo1 = document.getElementById("mess-svg");
+    var bg1 = document.getElementById("last-header1");
+    var m3 = document.getElementById("notification1");
+    var logo3 = document.getElementById("notify");
+    var bg3 = document.getElementById("last-header2");
+    if (m2.style.display === "none"){
+        m2.style.display = "block";
+
+        m1.style.display = "none";
+        logo1.style.fill = "black";
+        bg1.style.background = "#e3e5e9";
+        m.style.display = "none";
+        logo.style.fill = "black";
+        bg.style.background = "#e3e5e9";
+        m3.style.display = "none";
+        logo3.style.fill = "black";
+        bg3.style.background = "#e3e5e9";
+    }else{
+        m2.style.display = "none";
+    }
+}
+
+function notification(){
+    var m3 = document.getElementById("notification1");
+    var logo3 = document.getElementById("notify");
+    var bg3 = document.getElementById("last-header2");
+
+    var logo = document.getElementById("menu-svg");
+    var m = document.getElementById("main-menu");
+    var bg = document.getElementById("last-header");
+    var m1 = document.getElementById("messenger");
+    var logo1 = document.getElementById("mess-svg");
+    var bg1 = document.getElementById("last-header1");
+    var m2 = document.getElementById("profile-menu");
+
+    if (m3.style.display === "none"){
+        m3.style.display = "block";
+        logo3.style.fill = "#1B74E4";
+        bg3.style.background = "#E7F3FF";
+
+        m1.style.display = "none";
+        logo1.style.fill = "black";
+        bg1.style.background = "#e3e5e9";
+        m.style.display = "none";
+        logo.style.fill = "black";
+        bg.style.background = "#e3e5e9";
+        m2.style.display = "none"
+    }else{
+        m3.style.display = "none";
+        logo3.style.fill = "black";
+        bg3.style.background = "#e3e5e9";
     }
 }
 
@@ -135,5 +211,13 @@ function story(){
         story_span.style.color = "#1B74E4";
         reel_cover.style.borderBottom = "3px solid white";
         story_cover.style.borderBottom = "3px solid #1B74E4";
+    }
+}
+function chat(){
+    var m = document.getElementById("message");
+    if (m.style.display === "none"){
+        m.style.display = "block";
+    }else{
+        m.style.display = "none";
     }
 }
