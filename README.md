@@ -3,13 +3,18 @@
  
 # Description
  This is a look and feel replica of the original facebook designed with the most basic technologies HTML/CSS/JAVASCRIPT.
+ 
  I included some effects to make it more fun.
  Also the media responsiveness feature that makes it compatible on all platforms.
+ Here is the link to the github page I deployed it [Dummy Facebook](https://sawlew.github.io/facebook/).
  
  Below is the walkthrough of what the design is like. Please your review and advice would be highly appreciated.
 
 # Walkthrough
 https://user-images.githubusercontent.com/24959538/230753555-f7e6b664-3b5f-4bdf-a862-2b3a6bd4e1bc.mp4
+
+
+
 
 
 
