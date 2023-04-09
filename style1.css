@@ -13,7 +13,7 @@
 
 #cards-people{
     /* min-width: 100%; */
-    height: 410px;
+    height: 350px;
     /* border: 2px solid #1B74E4; */
     /* padding-bottom: 20px; */
 
@@ -36,8 +36,8 @@
 .avatar{
     border: 1px solid #dddddd;
     border-radius: 10px;
-    min-width: 250px;
-    height: 390px;
+    min-width: 200px;
+    height: 320px;
     margin-right: 10px;
     /* height: 90%; */
     /* overflow: hidden; */
@@ -994,4 +994,12 @@
     .vertical, .from-vert, .from-vert1, .lastvert{
         display: none;
     }
+}
+.bdayh{
+    margin-top: 10px;
+}
+#skadoosh{
+    position: absolute;
+    right: 100px;
+    top: 150px;
 }

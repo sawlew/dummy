@@ -1118,6 +1118,10 @@ hr{
 .confirm1:hover{
     background: #5b94da;
 }
+.confirm1:active{
+    background: white;
+    color: #1B74E4;
+}
 
 .confirm2{
     background: #c2c5c7;
@@ -1125,6 +1129,10 @@ hr{
 
 .confirm2:hover{
     background: #c7c9ca;
+}
+.confirm2:active{
+    background: black;
+    color: #c2c5c7;
 }
 
 h4{

@@ -222,18 +222,33 @@ function chat(){
     }
 }
 
-function friend(){
-    // const fri = document.getElementById("request");
-    // const req = document.getElementById("friend-request");
-    // if (fri.style.display === "flex"){
-        // fri.style.display = "none";
-        // req.style.display = "none";
-    // }
-    // setTimeout(function() {
-        // $("#friend-request").fadeOut(1500);
-        // $("#request").fadeOut(1500);
-    // }, 3000);
-    setTimeout(function() {
-        $("#request").fadeOut(1500);
-    },3000);
+function gauntlet(){
+    var delay = 2800;
+    var skadoosh = document.getElementById("skadoosh");
+    skadoosh.style.display = "block";
+
+    setTimeout(function disappear() {
+        skadoosh.style.display = "none";
+    }, delay);
+}
+
+function goAway(){
+    var delay = 6000;
+    var req = document.getElementById("request");
+    var freq = document.getElementById("friend-request");
+    
+
+    req.style.transition = "opacity 8000ms";
+    freq.style.transition = "opacity 8000ms";
+    req.style.opacity = "0";
+    freq.style.opacity = "0";
+    
+
+    setTimeout(function disappear() {
+        var req = document.getElementById("request");
+        var freq = document.getElementById("friend-request");
+
+        req.style.display = "none";
+        freq.style.display = "none";
+    }, delay);
 }
