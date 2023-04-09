@@ -1000,6 +1000,11 @@
 }
 #skadoosh{
     position: absolute;
-    right: 100px;
-    top: 150px;
+    right: 30px;
+    top: 60px;
+}
+
+#skadoosh img{
+    width: 300px;
+    height: 200px;
 }
