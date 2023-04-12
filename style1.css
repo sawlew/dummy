@@ -777,15 +777,18 @@
     margin-left: 50px;
 }
 .more-replies{
-    width: 150px;
+    min-width: 200px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     margin-left: 50px;
     font-size: 16px;
     font-weight: 500;
     color: gray;
     cursor: pointer;
+}
+.more-replies p{
+    margin-left: 5px;
 }
 .replier{
     margin-left: 10px;
@@ -795,6 +798,7 @@
     text-decoration: underline;
 }
 .more-comment{
+    min-width: 200px;
     font-weight: 500;
     color: gray;
     cursor: pointer;
@@ -802,8 +806,7 @@
 }
 .from-vert1{
     top: -10px;
-    height: 290px;
-    /* left: -10px; */
+    height: 293px;
 }
 .lastvert{
     height: 315px;
@@ -929,7 +932,12 @@
     }
     .scrollable-div{
         width: 50%;
+        margin-right: 40%;
     }
+    .fixed-div{
+        width: 40%;
+    }
+    
 }
 
 @media only screen and (max-width:430px){
@@ -983,7 +991,9 @@
     #last{
         width: 50%;
     }
-    
+    #message{
+        width: 80%;
+    }
 }
 @media only screen and (max-width:350px){
     #offline{
@@ -997,6 +1007,12 @@
     }
     .vertical, .from-vert, .from-vert1, .lastvert{
         display: none;
+    }
+    .more-replies{
+        margin-left: 0;
+    }
+    #message{
+        width: 80%;
     }
 }
 .bdayh{

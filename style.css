@@ -1362,6 +1362,7 @@ h4{
     border-top-left-radius: 7px;
     bottom: 0;
     right: 85px;
+    z-index: 1;
 }
 
 .message-top{
