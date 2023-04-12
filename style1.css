@@ -900,6 +900,9 @@
     #container1, #container2, #container3, #container4, #people, .memory{
         width: 90%;
     }
+    #slideLeft, #slideRight, .slideLeft, .slideRight{
+        display: none;
+    }
 }
 
 @media only screen and (min-width:430px) and (max-width:700px){
@@ -938,6 +941,9 @@
     }
     .fixed-div{
         width: 40%;
+    }
+    #slideLeft, #slideRight, .slideLeft, .slideRight{
+        display: none;
     }
     
 }
@@ -996,6 +1002,9 @@
     #message{
         width: 80%;
     }
+    #slideLeft, #slideRight, .slideLeft, .slideRight{
+        display: none;
+    }
 }
 @media only screen and (max-width:350px){
     #offline{
@@ -1015,6 +1024,9 @@
     }
     #message{
         width: 80%;
+    }
+    #slideLeft, #slideRight, .slideLeft, .slideRight{
+        display: none;
     }
 }
 .bdayh{
