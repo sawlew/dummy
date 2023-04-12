@@ -417,9 +417,10 @@
     margin: 15px auto;
 }
 
-.bar1{
+/* .bar1{
     height: 35px;
-}
+    border: 1px solid black;
+} */
 
 .sub-title{
     margin-left: 15px;
@@ -503,9 +504,10 @@
     font-size: 24px;
     font-weight: 700;
 }
-.bar2{
+/* .bar2{
+    border: 1px solid black;
     width: 90%;
-}
+} */
 .logos{
     display: flex;
     /* border: 1px solid green; */

@@ -180,7 +180,7 @@ label{
     border: none;
 }
 
-.bar:focus{
+.bar:focus, .bar1:focus, .bar2:focus{
     outline: none;
 }
 
