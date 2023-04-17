@@ -348,10 +348,8 @@
 }
 
 .scrollable-div{
-    /* border: 1px solid red; */
-    /* position: absolute; */
     width: 320px;
-    min-height: 2115px;
+    height: fit-content;
     border-radius: 10px;
     background: white;
     display: flex;
@@ -359,7 +357,7 @@
     margin-right: 230px;
     margin-bottom: 20px;
     box-shadow: 0 1px 10px rgb(185, 183, 183);
-    /* overflow-y: auto; */
+    padding-bottom: 20px;
 }
 
 .drop-menu{
