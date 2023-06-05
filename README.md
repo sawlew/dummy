@@ -6,7 +6,7 @@
  
  I included some effects to make it more fun.
  Also the media responsiveness feature that makes it compatible on all platforms.
- Here is the link to the github page I deployed it [Dummy Facebook](https://sawlew.github.io/facebook/).
+ Here is the link to the github page I deployed it [Dummy Facebook](https://sawlew.github.io/dummy/).
  
  Below is the walkthrough of what the design is like. Please your review and advice would be highly appreciated.
 
